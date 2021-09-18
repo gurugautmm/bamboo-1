@@ -3,7 +3,7 @@ version: 2
 plan:
   project-key: PROJ
   key: PLAN2
-  name: plan2
+  name: plan1
 stages:
 - Default Stage:
     manual: false
@@ -19,9 +19,10 @@ Default Job:
       configuration:
         globalApiUrl: http://18.117.86.8:8080/
         globalAquaPassword: '@Password1'
-        imageName: Centos:latest
+        registry: Docker Hub
+        imageName: ubuntu:latest
         globalScannerImage: registry.aquasec.com/scanner:5.3
-        locationType: local
+        locationType: hosted
         aquaConfig: current
         globalAquaUser: administrator
         useContextVariable: 'false'
@@ -41,7 +42,7 @@ other:
 ---
 version: 2
 plan:
-  key: PROJ-PLAN2
+  key: PROJ-PLAN
 plan-permissions:
 - roles:
   - logged-in
