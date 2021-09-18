@@ -2,8 +2,8 @@
 version: 2
 plan:
   project-key: PROJ
-  key: PLAN2
-  name: plan2
+  key: abc
+  name: abc
 stages:
 - Default Stage:
     manual: false
@@ -42,7 +42,7 @@ other:
 ---
 version: 2
 plan:
-  key: PROJ-PLAN2
+  key: PROJ-abc
 plan-permissions:
 - roles:
   - logged-in
