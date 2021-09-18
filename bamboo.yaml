@@ -42,7 +42,7 @@ other:
 ---
 version: 2
 plan:
-  key: PROJ-PLAN
+  key: PROJ-PLAN2
 plan-permissions:
 - roles:
   - logged-in
